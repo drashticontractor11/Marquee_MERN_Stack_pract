@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        tfoot {
+            text-align: center;
+        }
+
+        caption {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>
+            <h3><u>STUDENT REGISTRATION FORM</u></h3>
+        </caption>
+        <tbody>
+            <form action="3_action_page.html" method="get">
+                <tr>
+                    <td><label for="first_name">First Name</label></td>
+                    <td><input type="text" id="first_name" name="first_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name</label></td>
+                    <td><input type="text" id="last_name" name="last_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB</label></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile number</label></td>
+                    <td><input type="tel" id="mobile" name="mobile"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><input type="text" id="address" name="address"></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td><input type="text" id="city" name="city"></td>
+                </tr>
+                <tr>
+                    <td><label for="pincode">Pincode</label></td>
+                    <td><input type="text" id="pincode" name="pincode"></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State</label></td>
+                    <td><input type="text" id="state" name="state"></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><input type="text" id="country" name="country"></td>
+                </tr>
+                <tr>
+                    <td><label for="hobbies">Hobbies</label></td>
+                    <td>
+                        <label for="reading">Reading</label>
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="traveling">Traveling</label>
+                        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="qualification">Qualification</label></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Sr.No.</th>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year of passing</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><label for="examination1">Class X</label></td>
+                                <td><input type="text" id="examination1" name="board1"></td>
+                                <td><input type="text" id="examination1" name="percentage1"></td>
+                                <td><input type="text" id="examination1" name="year_of_passing1"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><label for="examination2">Class XII</label></td>
+                                <td><input type="text" id="examination2" name="board2"></td>
+                                <td><input type="text" id="examination2" name="percentage2"></td>
+                                <td><input type="text" id="examination2" name="year_of_passing2"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><label for="graduate">Graduation</label></td>
+                                <td><input type="text" id="graduate" name="board3"></td>
+                                <td><input type="text" id="graduate" name="percentage3"></td>
+                                <td><input type="text" id="graduate" name="year_of_passing3"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><label for="masters">Masters</label></td>
+                                <td><input type="text" id="masters" name="board4"></td>
+                                <td><input type="text" id="masters" name="percentage4"></td>
+                                <td><input type="text" id="masters" name="year_of_passing4"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="course_applied">Course Applied for.</label></td>
+                    <td>
+                        <label for="btech">B.Tech</label>
+                        <input type="radio" id="btech" name="course_applied" value="btech">
+                        <label for="bca">B.C.A</label>
+                        <input type="radio" id="bca" name="course_applied" value="bca">
+                        <label for="bcom">B.Com</label>
+                        <input type="radio" id="bcom" name="course_applied" value="bcom">
+                        <label for="bba">BBA</label>
+                        <input type="radio" id="bba" name="course_applied" value="bba">
+                        <label for="bsc">B.Sc</label>
+                        <input type="radio" id="bsc" name="course_applied" value="bsc">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </form>
+        </tbody>
+        <tfoot>
+            <!-- <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </tfoot> -->
+    </table>
+</body>
+
+</html>

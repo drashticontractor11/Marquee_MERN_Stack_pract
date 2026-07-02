@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Sports Physical form</h2>
+    <form action="3_action_page.html" method="get">
+        <fieldset>
+            <legend>
+                <h4>Athlete Information</h4>
+            </legend>
+            <ul>
+                <li>
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" name="username" id="name" placeholder="username">
+                </li>
+                <li>
+                    <label for="school"><b>School/Team:</b></label>
+                    <input type="text" name="school" id="school" value="Parul University" readonly>
+                </li>
+                <li>
+                    <label for="sport"><b>Sport:</b></label>
+                    <input type="text" name="sport" id="sport" placeholder="sport">
+                </li>
+
+                <li>
+                    <label for="parent_guardian_name"><b>Parent/Guardian Name:</b></label>
+                    <input type="text" name="parent_guardian_name" id="parent_guardian_name"
+                        placeholder="Parent/Guardian Name">
+                </li>
+                <li>
+                    <label for="contact"><b>Contact Number:</b></label>
+                    <input type="number" name="contact" id="contact" placeholder="Contact Number">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h4>Medical History for athlete</h4>
+            </legend>
+            <ul>
+                <li>
+                    <b>History of concussions:</b>
+                    <input type="radio" name="concussion" id="concussion_yes" value="concussion_yes">
+                    <label for="concussion_yes">Yes</label>
+                    <input type="radio" name="concussion" id="concussion_no" value="concussion_no">
+                    <label for="concussion_no">No</label>
+
+                </li>
+                <li>
+                    <label for="surgeries"><b>Previous surgeries:</b></label>
+                    <input type="text" name="surgeries" id="surgeries" value="Bone surgery" readonly>
+                </li>
+                <li>
+                    <label for="fractures"><b>Any bone fractures:</b></label>
+                    <input type="radio" name="fractures" id="fractures_yes" value="fractures_yes">
+                    <label for="fractures_yes">Yes</label>
+                    <input type="radio" name="fractures" id="fractures_no" value="fractures_no">
+                    <label for="fractures_no">No</label>
+                </li>
+                <li>
+                    <label for="asthma"><b>Asthma and breathing problems:</b></label>
+                    <input type="radio" name="asthma" id="asthma_yes" value="asthma_yes">
+                    <label for="asthma_yes">Yes</label>
+                    <input type="radio" name="asthma" id="asthma_no" value="asthma_no">
+                    <label for="asthma_no">No</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+        \
+          <legend for="department">Select your department</legend>
+            <select id="department" name="department_name" aria-label="Department">
+                <option value="">Select your department</option>
+                <option value="">CSE</option>
+                <option value="">AIML</option>
+                <option value="">AIDS</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend> Select your Hobbies</legend>
+            <label for="reading">Reading</label>
+            <input type="checkbox" name="hobbies_1" id="reading" value="reading">
+            <label for="dance">Dance</label>
+            <input type="checkbox" name="hobbies_2" id="dance" value="dance">
+            <label for="music">Music</label>
+            <input type="checkbox" name="hobbies_3" id="music" value="music">
+        </fieldset>
+        <fieldset>
+            <legend>Your address:</legend>
+            <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter your address"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Additional tasks:</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+
+            <label for="password">Create your password:</label>
+            <input type="password" name="password" id="password" placeholder="Create your password"><br>
+
+            <label for="contact_number">Contact number:</label>
+            <input type="tel" name="contact_number" id="contact_number" placeholder="Enter your contact number"><br>
+
+            <label for="date_of_birth">Date of Birth:</label>
+            <input type="date" name="date_of_birth" id="date_of_birth"><br>
+
+            <label for="time_of_birth">Time of Birth:</label>
+            <input type="time" name="time_of_birth" id="time_of_birth"><br>
+
+            <label for="document_upload">Document:</label>
+            <input type="file" name="document_upload" id="document_upload" accept=".doc,.docx"><br>
+
+            <label for="profile_img">Profile image:</label>
+            <input type="file" name="profile_img" id="profile_img" accept=".png, .jpg, .jpeg"><br>
+
+            <label for="resume">Resume:</label>
+            <input type="file" name="resume" id="resume" accept=".pdf"><br>
+
+            <label for="excel">Excel file:</label>
+            <input type="file" name="excel" id="excel" accept=".xlsx,.xls"><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h4>Doctor's recommendations for sports</h4>
+            </legend>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
