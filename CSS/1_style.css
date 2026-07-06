@@ -4,10 +4,12 @@
     padding: 5px;
     box-sizing: border-box;
 }
-h3 {
+h3,p {
     margin-bottom: 10px;
     color: red;
 }
-ul {
+ul li {
     color: rgb(55, 144, 222);
+    font-family: cursive;
+    
 }

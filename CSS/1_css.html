@@ -5,14 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="1_style.css">
-    <style></style>
+    <style>
+        #heading{
+            color:blueviolet;
+            background-color: lightgray;
+        }
+        .bg{
+            color: red;
+        }
+        section p{
+            color: green;
+        }
+        input[type="text"]{
+            background-color: rgb(40, 77, 223);
+        }
+        input[type="password"]{
+            background-color: rgb(223, 40, 40);
+        }
+        button:hover,a:hover{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <h3>Types of CSS</h3>
+    
+    <h3 id="heading" class="bg">Types of CSS</h3>
+    <p>There are three types of CSS:</p>
     <ul>
         <li>Prioroty 1: Inline CSS</li>
         <li>Priority 2: Internal CSS</li>
         <li>Priority 3: External CSS</li>
     </ul>
+    <a href="abc@gmail.com">Contact Us</a>
+    <section>
+        <div>
+            <p>inner</p>
+        </div>
+        <p>direct</p>
+    </section>
+     <section>
+        <form>
+            <formfield>
+                <label for="name">UserName:</label>
+                <input type="text" id="name" name="name">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </formfield>
+            <button type="submit">Submit</button>
+        </form>
+     </section>
 </body>
 </html>
