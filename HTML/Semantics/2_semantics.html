@@ -43,14 +43,13 @@
             <a href="#sub-heading-5">5.Facilities</a>
         </nav>
     </header>
-    
+
     <section>
         <section>
             <h2 class="centralized">About Us - Parul University 👍✅ હેલો</h2>
             <figure>
                 <img src="https://www.paruluniversity.ac.in/wp-content/uploads/2025/07/Main-gate-wide-photo-EDITED-scaled-e1752558962381.jpg"
-                    alt="Parul University Banner" width="500px" height="500px"
-                    style="width: 100%; display: flex; justify-content: center" />
+                    alt="Parul University Banner" width="500px" height="500px" />
             </figure>
             <figcaption class="centralized"><strong>
                     <h2>Place for Discovery, Innovation and Quality Learning. </h2>
@@ -78,8 +77,9 @@
                     veritatis, laborum ut eaque aperiam rerum! Cumque ab vitae voluptatibus unde inventore quia voluptas
                     accusantium nobis! Ad distinctio odit velit, error magni consequuntur itaque laudantium voluptates
                     enim fugit. Voluptas eos non id maxime minima, mollitia tenetur veritatis harum. </p>
-                <p> <strong>Links for Detail Info:</strong> <a href="https://www.paruluniversity.ac.in/about-us/"
-                        target="_blank">Click Here</a> </p>
+                <p> <strong>Links for Detail Info:</strong>
+                    <a href="https://www.paruluniversity.ac.in/about-us/" target="_blank" rel="noopener">Click Here</a>
+                </p>
             </section>
             <section id="sub-heading-2" class="sub-headings">
                 <h2 class="headings">2.Admission Process</h2>
@@ -100,7 +100,7 @@
                     accusantium nobis! Ad distinctio odit velit, error magni consequuntur itaque laudantium voluptates
                     enim fugit. Voluptas eos non id maxime minima, mollitia tenetur veritatis harum. </p>
                 <p> <strong>Links for Detail Info:</strong> <a href="https://www.paruluniversity.ac.in/about-us/"
-                        target="_blank">Click Here</a> </p>
+                        target="_blank" rel="noopener">Click Here</a> </p>
             </section>
             <section id="sub-heading-3" class="sub-headings">
                 <h2 class="headings">3.Placement Support</h2>
@@ -121,7 +121,7 @@
                     accusantium nobis! Ad distinctio odit velit, error magni consequuntur itaque laudantium voluptates
                     enim fugit. Voluptas eos non id maxime minima, mollitia tenetur veritatis harum. </p>
                 <p> <strong>Links for Detail Info:</strong> <a href="https://www.paruluniversity.ac.in/about-us/"
-                        target="_blank">Click Here</a> </p>
+                        target="_blank" rel="noopener">Click Here</a> </p>
             </section>
             <section id="sub-heading-4" class="sub-headings">
                 <h2 class="headings">4.Programs We Offer</h2>
@@ -142,7 +142,7 @@
                     accusantium nobis! Ad distinctio odit velit, error magni consequuntur itaque laudantium voluptates
                     enim fugit. Voluptas eos non id maxime minima, mollitia tenetur veritatis harum. </p>
                 <p> <strong>Links for Detail Info:</strong> <a href="https://www.paruluniversity.ac.in/about-us/"
-                        target="_blank">Click Here</a> </p>
+                        target="_blank" rel="noopener">Click Here</a> </p>
             </section>
             <section id="sub-heading-5" class="sub-headings">
                 <h2 class="headings">5.Facilities</h2>
@@ -163,12 +163,47 @@
                     accusantium nobis! Ad distinctio odit velit, error magni consequuntur itaque laudantium voluptates
                     enim fugit. Voluptas eos non id maxime minima, mollitia tenetur veritatis harum. </p>
                 <p> <strong>Links for Detail Info:</strong> <a href="https://www.paruluniversity.ac.in/about-us/"
-                        target="_blank">Click Here</a> </p>
+                        target="_blank" rel="noopener">Click Here</a> </p>
             </section>
         </section>
     </section>
     <footer>Copy Right Parul University@2026</footer> <!-- Code injected by live-server -->
-    <script> // <![CDATA[ <-- For SVG support if ('WebSocket' in window) { (function () { function refreshCSS() { var sheets = [].slice.call(document.getElementsByTagName("link")); var head = document.getElementsByTagName("head")[0]; for (var i = 0; i < sheets.length; ++i) { var elem = sheets[i]; var parent = elem.parentElement || head; parent.removeChild(elem); var rel = elem.rel; if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") { var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, ''); elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf()); } parent.appendChild(elem); } } var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; var address = protocol + window.location.host + window.location.pathname + '/ws'; var socket = new WebSocket(address); socket.onmessage = function (msg) { if (msg.data == 'reload') window.location.reload(); else if (msg.data == 'refreshcss') refreshCSS(); }; if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) { console.log('Live reload enabled.'); sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true); } })(); } else { console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.'); } // ]]> </script>
+    <script>
+        // <![CDATA[
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName('link'));
+                    var head = document.getElementsByTagName('head')[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && (typeof rel != 'string' || rel.length == 0 || rel.toLowerCase() == 'stylesheet')) {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
 </body>
 
 </html>

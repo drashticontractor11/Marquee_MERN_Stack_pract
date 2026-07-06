@@ -1,0 +1,13 @@
+*{
+    
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+h3 {
+    margin-bottom: 10px;
+    color: red;
+}
+ul {
+    color: rgb(55, 144, 222);
+}
