@@ -8,10 +8,10 @@ h1{
     
 }
 li{
-    background-color: yellow;
+    background-color: rgb(195, 0, 255);
     display:inline-block;
     height: 50px;
     width: 100px;
     padding-left: 5px;
     margin: 3px;
-}
+}q
