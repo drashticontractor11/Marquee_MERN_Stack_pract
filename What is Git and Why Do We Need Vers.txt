@@ -1,0 +1,30 @@
+What is Git and Why Do We Need Version Control
+Difference Between Git and GitHub
+Workflow of Git repositories from LOCAL TO Remote
+Git as a Decentralized Version Control System
+Initializing a Repository: git init
+Configuring User Details: git config (name and email)
+Tracking and Cleaning Files: git add, git commit, git clean
+HOW --- Git add. Work () - > in Workflow
+HOW --- Git commit. Work () -> in Workflow
+git clean -- > Git clean. Work () -> in Workflow
+
+
+Fetching and Cloning Repositories: git fetch vs git clone
+Committing Changes with Messages: git commit -m
+Tagging Commits with git tag
+What is Git and Why Do We Need Version Control
+Difference Between Git and GitHub
+Workflow of Git repositories from LOCAL TO Remote
+Git as a Decentralized Version Control System
+Initializing a Repository: git init
+Configuring User Details: git config (name and email)
+Tracking and Cleaning Files: git add, git commit, git clean
+HOW --- Git add. Work () - > in Workflow
+HOW --- Git commit. Work () -> in Workflow
+git clean -- > Git clean. Work () -> in Workflow
+
+
+Fetching and Cloning Repositories: git fetch vs git clone
+Committing Changes with Messages: git commit -m
+Tagging Commits with git tag
