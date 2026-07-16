@@ -126,20 +126,62 @@
             justify-content: center;
             align-items: center;
             gap: 50px;
-            background-color: rgb(219, 224, 224);
+            background-color: rgb(253, 253, 253);
 
         }
-
+        .card2:hover .symbol{
+            background-color: #e42020;
+        }
+        .card2:hover .text{
+            color: #e42020;
+        }
         .card2 {
 
-            width: 150px;
+            width: 180px;
             height: 90px;
             background-color: #fefefe;
-            border-right: black solid;
             border-radius: 5px;
             margin: 10px;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items:end;
         }
+        .card2-content{
+            position: relative;
+            width: 180px;
+            height: 90px;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 10px;
+        }
+       
+        .symbol{
+            position: relative;
+             width: 50px;
+            height: 50px;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: rgb(227, 227, 230);
+            font-size: 30px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(139, 138, 138, 0.2);
+            flex-wrap: wrap;
+             
+        }
+        .text:hover{
+             position: relative;
+            display: flex;
+            align-items: start;
+            
+        }
+       p{
+        font-size: small;
+       }
     </style>
 
 </head>
@@ -237,71 +279,79 @@
     <div class="main2">
         <div class="card2">
             <div class="card2-content">
-                <h3>Web Development</h3>
+                <div class="symbol"><i class="fa-solid fa-desktop"></i></div>
+                <div class="text"><h5>Web Development</h5>
+                </div>
             </div>
         </div>
         <div class="card2">
             <div class="card2-content">
-                <h3>App Development</h3>
+                <div class="symbol"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="text"><h5>App Development</h5></div>
             </div>
         </div>
         <div class="card2">
             <div class="card2-content">
-                <h3>WebAR Development</h3>
+                <div class="symbol"><i class="fa-brands fa-apple"></i></div>
+                <div class="text"><h5>iOS Development</h5></div>
             </div>
         </div>
         <div class="card2">
             <div class="card2-content">
-                <h3>Full Stack Development</h3>
-            </div>
-        </div>
-    </div>
-    <div class="main2">
-        <div class="card2">
-            <div class="card2-content">
-                <h3>iOS Development</h3>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="card2-content">
-                <h3>Cloud Development</h3>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="card2-content">
-                <h3>AI/ML</h3>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="card2-content">
-                <h3>Game Development</h3>
+                <div class="symbol"><i class="fa-brands fa-android"></i></div>
+                <div class="text"><h5>Android Development</h5></div>
             </div>
         </div>
     </div>
     <div class="main2">
         <div class="card2">
             <div class="card2-content">
-                <h3>Web Development</h3>
+                <div class="symbol"><i class="fa-solid fa-gamepad"></i></div>
+                <div class="text"><h5>Game Development</h5></div>
             </div>
         </div>
         <div class="card2">
             <div class="card2-content">
-                <h3>Web Development</h3>
+                <div class="symbol"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="text"><h5>Web Development</h5></div>
             </div>
         </div>
         <div class="card2">
             <div class="card2-content">
-                <h3>Web Development</h3>
+                <div class="symbol"><i class="fa-solid fa-vr-cardboard"></i></div>
+                <div class="text"><h5>AR/VR Development</h5></div>
             </div>
         </div>
         <div class="card2">
             <div class="card2-content">
-                <h3>Web Development</h3>
+                <div class="symbol"><i class="fa-solid fa-vr-cardboard"></i></div>
+                <div class="text"><h5>WebAR Development</h5></div>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        
+        <div class="card2">
+            <div class="card2-content">
+                <div class="symbol"><i class="fa-regular fa-cloud"></i></div>
+                <div class="text"><h5>Cloud service</h5></div>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card2-content">
+                <div class="symbol"><i class="fa-solid fa-robot"></i></div>
+                <div class="text"><h5>AI/ML</h5></div>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card2-content">
+                <div class="symbol"><i class="fa-solid fa-bug"></i></div>
+                <div class="text"><h5>Cyber security</h5></div>
             </div>
         </div>
     </div>
 
-    <div id="bot1"><i size=" " class="fa-brands fa-whatsapp"></i></div>
+    <div id="bot1"><i class="fa-brands fa-whatsapp"></i></div>
     <div id="bot2"><i class="fa-brands fa-bots"></i></div>
 </body>
 
