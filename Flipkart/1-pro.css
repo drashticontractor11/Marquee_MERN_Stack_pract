@@ -191,7 +191,7 @@ img {
     height: auto;
     padding: 2px;
     margin-bottom: 2px;
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
