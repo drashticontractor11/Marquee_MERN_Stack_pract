@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+     height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+    'sidebar main-content';
+}
+#sidebar{
+    grid-area: sidebar;
+    background-color: rgb(7, 87, 163);
+}
+#main-content{
+    grid-area: main-content;
+    background-color: rgb(245, 244, 244);
+}
+#heading, .items {
+    padding: 15px;
+    text-align: left;
+    color: white;
+    border: 10px;
+    border-bottom-color: whitesmoke;
+}
+p{
+    font-size: x-small;
+    padding-top: 3px;
+}
+#top-sec{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+}
+#col-1, #col-2{
+    width: 50%;
+    height: 100px;
+    margin:10px;
+}
+#col-2{
+    
+    display: flex;
+    justify-content: end;
+    gap:10px;
+    align-items: flex-start;
+}
+#search-box{
+    padding: 3px;
+    width: 60%;
+    height: 25%;
+    background-color: rgb(210, 207, 207);
+    border-radius: 5px;
+    display: flex;
+}
+
+#noti,#icon{
+    
+    height: 10vh;
+    padding: 5px;
+}
+#icon{
+    width: 30px;
+    height: auto;
+    background-color: rgb(64, 132, 227);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+#welcome-screen{
+    width: 95%;
+    height: 250px;
+    margin: 20px;
+    background-color: rgb(5, 88, 161);
+    border-radius: 10px;
+}
+#wel-text{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    
+}
+#col-1-wel{
+    width: 60%;
+    height: 100px;
+    padding: 10px;
+    color: white;
+}
+#col-1-text>p{
+    padding-top: 10px;
+    font-size: small;
+}
+
+#col-2-wel{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#day-date{
+    margin: 20px;
+    padding: 7px;
+    width: auto;
+    height: 30px;
+    background-color: rgb(43, 106, 166);
+    font-size: small;
+    color: white;
+    border-radius: 10px;
+}
+#btn-2{
+    width: auto;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    gap:10px;
+
+}
+#export-btn{
+    margin-top: 20px;
+    padding: 7px;
+    width: auto;
+    height: 30px;
+    color: white;
+    font-size: x-small;
+    border-radius: 10px;
+    background-color: rgb(43, 106, 166);
+}
+#refresh{
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 7px;
+    width: 30px;
+    color: white;
+    height: 30px;
+    text-align: center;
+    font-size: x-small;
+    border-radius: 10px;
+    background-color: rgb(43, 106, 166);
+}
