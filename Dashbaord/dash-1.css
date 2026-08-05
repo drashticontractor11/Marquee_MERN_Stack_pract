@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: gilroy, sans-serif;
+    
 }
 
 html,
@@ -23,6 +24,8 @@ body {
     background-color: rgb(7, 87, 163);
 }
 #main-content{
+     height: 100%;
+    width: 100%;
     grid-area: main-content;
     background-color: rgb(245, 244, 244);
 }
@@ -81,8 +84,11 @@ p{
     width: 95%;
     height: 250px;
     margin: 20px;
+    padding-bottom: 20px;
     background-color: rgb(5, 88, 161);
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 #wel-text{
     width: 100%;
@@ -146,4 +152,194 @@ p{
     font-size: x-small;
     border-radius: 10px;
     background-color: rgb(43, 106, 166);
+    
+}
+
+#wel-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#todays-order, #new-users, #rev-today, #conv-rate {
+    background-color: rgb(43, 106, 166);  
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+    line-height: 1.5;
+   
+   
+}
+
+
+#card-container{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    column-gap: 7px;
+}
+
+/* Card Container */
+.card {
+  width: 225px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Header Row */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 10px;
+}
+
+.icon-wrapper {
+  width: 38px;
+  height: 38px;
+  background-color: #eff6ff;
+  color: #3b82f6;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.badge {
+    width: 80px;
+  height: 25px;
+  color: #199848;
+  background-color:#d9f4e3 ;
+  border-radius: 10px ;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 10px;
+}
+
+/* Body Section */
+.card-body {
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+
+.metric-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.metric-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.metric-sublabel {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+/* Footer & Progress Bar */
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+.progress-percent {
+  font-weight: 700;
+  color: #374151;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-bar-fill {
+  width: 75%;
+  height: 100%;
+  background-color: #1e40af;
+  border-radius: 10px;
+}
+
+.comparison {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.comparison-value {
+  font-weight: 600;
+  color: #374151;
+}
+#activity{
+     display: grid;
+    grid-template-columns: 60% 35%;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    column-gap: 7px;
+}
+#analysis, #live{
+    width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+#text{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+}
+#butn, #btn{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+#this-month{
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: rgb(7, 87, 163);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+#this-year{
+    width: 80px;
+    height: 30px;
+    color: rgb(8, 8, 8);
+    background-color: rgb(245, 247, 248);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }

@@ -9,9 +9,9 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
+        /* body {
             animation: bg 5s linear 1s infinite;
-        }
+        } */
 
         @keyframes bg {
             0% {
@@ -86,15 +86,15 @@
             transform: scale(1);
         }
 
-        h2:hover {
+        /* h2:hover {
             background-color: green;
             transform: scale(1.3);
-        }
+        } */
 
-        #img_container:hover img {
+        /* #img_container:hover img {
             transform: scale(1.5);
-            /* Shrinks the image to 80% size */
-        }
+            
+        } */
 
         #img {
             width: 100%;
@@ -115,8 +115,8 @@
 
         #img_container {
             width: 100%;
+         
             position: absolute;
-
             bottom: -30px;
         }
 
@@ -142,8 +142,13 @@
 
         }
 
+        .button:hover {
+            background-color: #636262;
+        }
+
         .button {
             background-color: #333;
+            transition: background-color;
             color: #fff;
             border-radius: 30px;
             padding: 10px 20px;
@@ -153,10 +158,49 @@
 
         .stats {
             position: absolute;
-
             width: 100%;
             text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
         }
+       
+
+        #status {
+             width:20px;
+            height: 20px;
+            background-color: rgb(26, 229, 63);
+            border-radius: 50%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            position: relative;
+            top:100px;
+            left: 60%;
+            animation: blinking 1s infinite 1s ease-in-out;
+        }
+       @keyframes blinking {
+        0%{
+            background-color: rgb(21, 167, 47);
+        }
+        50%{
+             background-color: rgb(52, 187, 77);
+        }
+        100%{
+             background-color: rgb(92, 225, 116);
+        }
+        
+       }
+      
+       #fb:hover, #twitter:hover,#linkedin:hover{
+        color: blue;
+       }
+       #fb, #twitter, #linkedin, #insta{
+        transition: color;
+       }
+       #insta:hover{
+        color: palevioletred;
+       }
     </style>
 </head>
 
@@ -165,6 +209,7 @@
         <card>
             <div id="div1">
                 <div id="img_container">
+                    <div id="status"></div>
                     <img src="images/image.png" alt="Image">
                 </div>
             </div>
@@ -172,17 +217,17 @@
                 <div class="div2">
                     <h2>Drashti Contractor</h2>
                     <p>3rd year Btech CSE student at Parul University</p>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i><br><br>
+                    <i class="fa-brands fa-facebook" id="fb"></i>
+                    <i class="fa-brands fa-twitter" id="twitter"></i>
+                    <i class="fa-brands fa-instagram" id="insta"></i>
+                    <i class="fa-brands fa-linkedin" id="linkedin"></i><br><br>
                     <button class="button">Subscribe</button>
                     <button class="button">Message</button><br><br>
                 </div>
                 <div class="stats">
-                    <i class="fa-regular fa-heart"></i> 80.4K |
-                    <i class="fa-regular fa-comment"></i>20.4K |
-                    <i class="fa-solid fa-share"></i> 12.4K
+                   <div class="icon"> <i class="fa-regular fa-heart"></i> 80.4K |</div>
+                    <div class="icon"><i class="fa-regular fa-comment"></i>20.4K |</div>
+                   <div class="icon"> <i class="fa-solid fa-share"></i> 12.4K</div>
                 </div>
             </div>
         </card>
