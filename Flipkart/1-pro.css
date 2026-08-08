@@ -247,8 +247,15 @@ img {
 #Best-deals{
     min-width: 100%;
     height: 350px;
-    margin:auto;
+    margin:10px;
     background-color: rgb(236, 188, 248);
+    border-radius: 20px;
+}
+#Best-deals-2{
+    min-width: 100%;
+    height: 350px;
+    margin:auto;
+    background-color: rgb(116, 239, 248);
     border-radius: 20px;
 }
 #ow1{
