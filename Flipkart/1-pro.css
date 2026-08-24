@@ -36,7 +36,6 @@ header{
 }
 
 header,main {
-    width: 90vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -45,8 +44,13 @@ header,main {
 }
 
 main {
+    width: 90vw;
+}
+
+main {
     position: relative;
     margin-top: 190px;
+    align-items: center;
 }
 footer{
     width: 100vw;
@@ -62,9 +66,9 @@ footer{
     width: 90%;
     background-color: rgb(255, 255, 255);
     display: flex;
-    
     flex-wrap: wrap;
     gap: 12px;
+    margin: 0 auto;
 }
 
 #header-navbar-left {
